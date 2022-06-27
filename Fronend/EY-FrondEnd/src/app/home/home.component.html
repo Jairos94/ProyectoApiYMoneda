@@ -1,0 +1,20 @@
+
+ <h3>Welcome</h3>
+ <h3>{{ name |pipeAplication}}</h3>
+ <ul class="nav">
+  
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" routerLink="./local-currency" [routerLinkActive]="'active'">Local currency</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" routerLink="./change-currency" [routerLinkActive]="'active'">Chance Other currency</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="./users" *ngIf="Administrator" [routerLinkActive]="'active'">Querys Users</a>
+  </li>
+  
+
+</ul>
+<div class="bottom">
+  <router-outlet></router-outlet>
+</div>

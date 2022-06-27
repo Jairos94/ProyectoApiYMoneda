@@ -1,0 +1,38 @@
+<div class="position-relative position-absolute top-50 start-50 translate-middle">
+ 
+    
+        <div class="input-group input-group-lg">
+            <span class="input-group-text" id="inputGroup-sizing-lg">Source Currency</span>
+            <input type="text" class="form-control" [(ngModel)]="search" (input)="KeybordPress()" name="SourceCurrency"
+                autocomplete="off" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            <p>{{ cuncurry }}</p>
+        </div>
+        <div class="input-group input-group-lg">
+            <span class="input-group-text" id="inputGroup-sizing-lg">Destination Currency</span>
+            <input type="text" class="form-control" [(ngModel)]="search2" (input)="KeybordPress2()"
+                name="DestinationCurrency" autocomplete="off" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-lg">
+            <p>{{ destination }}</p>
+        </div>
+
+        <div class="input-group mb-3">
+           
+            <input type="number" class="form-control" placeholder="Cantidad" [(ngModel)]="value"  aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-primary" (click)="resultO()" >Change</button>
+                </div>
+                <div class="col">
+                 <h3>{{ Info.conversion_rate }}</h3>
+                </div>
+                <div class="col">
+                    <h3>Result: {{ result }}</h3>
+                   </div>
+            </div>
+        </div>
+
+    
+</div>

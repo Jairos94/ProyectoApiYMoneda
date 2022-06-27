@@ -1,0 +1,14 @@
+<div class="position-relative position-absolute top-50 start-50 translate-middle">
+  <div >
+    <input class="col" placeholder="USD" class="col" type="number" [formControl]="USD">
+
+    <input class="col" placeholder="CRC" class="col" type="number"  [formControl]="CRC">
+</div>
+
+<h3>value USD: {{ ValUsd }} in  {{ value2 }}</h3>
+<h3 *ngIf="!DollarActive">change value {{ result |currency}} dollar</h3>
+<h3 *ngIf="DollarActive">change value ¢ {{ result }} colones</h3>
+
+  <button type="button" class="btn btn-outline-primary" (click)="calculate()">Submit</button>
+ 
+</div>

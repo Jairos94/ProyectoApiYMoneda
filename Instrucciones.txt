@@ -1,0 +1,18 @@
+1-En la carpeta Scrips se debe correr primero DataBase.sql.
+
+2- Si bien gustan pueden correr  el scrip de UsuarioProyecto.sql En caso de no usar se debe cambiar las credenciales de en el api \Backend\Ey-BackEnd en el archivo Backend\Ey-BackEnd\Database\db.cs.
+
+3- Abrir el api con visual studio 2019 y cambiar el server(puede ser con la ip o de forma local del sql) en el archivo Backend\Ey-BackEnd\Database\db.cs.
+
+4- en el frontEnd \Fronend\EY-FrondEnd correr con el cmd npm i, esto para instalar los modulos.
+
+5- levantar el api. con start modo debug
+
+6-en la ruta del api \Fronend\EY-FrondEnd correr ng serve --o( nota importante deben instalar angular cli)
+
+contraseña de ambos usuarios:
+123456
+
+Usuario:
+Administrator@ey.com
+user@ey.com
